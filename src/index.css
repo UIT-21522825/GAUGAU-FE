@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import '~antd/dist/antd.variable.min.css'; */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: Montserrat, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  svg {
+    display: inline;
+    vertical-align: baseline;
+  }
+  span.anticon.ant-notification-notice-icon {
+    padding-top: 30px;
+    display: inline;
+    vertical-align: baseline;
+  }
+  a,
+  Link {
+    cursor: pointer;
+  }
+  dl,
+  ol,
+  ul {
+    margin: 0px !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.ant-col,
+.ant-form-item-label {
+  padding: 0px !important;
+}
+
+.bg-linear-1 {
+  background: rgb(1, 219, 241) !important;
+  background: linear-gradient(
+    115deg,
+    rgba(1, 219, 241, 1) 8%,
+    rgba(82, 116, 232, 1) 100%
+  ) !important;
+}
