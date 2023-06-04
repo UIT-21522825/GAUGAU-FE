@@ -9,7 +9,6 @@ import "antd/dist/antd.variable.min.css";
 
 import { LoginPage } from "./pages/login";
 import { SignUpPage } from "./pages/signup";
-import { DemoPage } from "./pages/demo";
 import { HomePage } from "./pages/home";
 import themeConfig from "./theme/theme.config";
 import { Provider } from "./components/provider/index";
@@ -52,7 +51,7 @@ root.render(
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage/>} />
-            <Route path="demo" element={<DemoPage/>} />
+
             <Route path="login" element={<LoginPage />} />
             <Route path="signup" element={<SignUpPage />} />
  
