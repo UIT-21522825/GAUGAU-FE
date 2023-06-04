@@ -12,6 +12,7 @@ import { SignUpPage } from "./pages/signup";
 import { HomePage } from "./pages/home";
 import themeConfig from "./theme/theme.config";
 import { Provider } from "./components/provider/index";
+import Orders from "./pages/orders/Orders";
 
 ConfigProvider.config({
   theme: {
@@ -54,7 +55,7 @@ root.render(
 
             <Route path="login" element={<LoginPage />} />
             <Route path="signup" element={<SignUpPage />} />
- 
+            <Route path="orders" element={<Orders/>} />
           </Routes>
         </BrowserRouter>
       </motion.div>

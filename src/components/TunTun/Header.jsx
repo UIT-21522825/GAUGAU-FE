@@ -98,6 +98,14 @@ const Header = () => {
                 Hồ sơ
               </li>
             </Link>
+
+             <Link to="/orders">
+              <li className="text-xl py-4 flex">
+                <RiAccountCircleFill size={25} className="mr-4" />
+                Hóa đơn
+              </li>
+            </Link>
+  
   
             {isLoggedIn && (
               <li className="text-xl py-4 flex cursor-pointer" onClick={logOut}>

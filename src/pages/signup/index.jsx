@@ -63,7 +63,7 @@ const SignUpPage = () => {
   return (
     <AnonymousWrapper>
       <Helmet>
-        <title>UIT.ai | Đăng kí</title>
+        <title>GAUGAU.SignUp | Đăng nhập</title>
       </Helmet>
       <Header />
       <div className="w-full h-full min-h-screen bg-gray-100 flex align-center justify-center items-center">
