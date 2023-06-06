@@ -12,19 +12,23 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
   svg {
     display: inline;
     vertical-align: baseline;
   }
+
   span.anticon.ant-notification-notice-icon {
     padding-top: 30px;
     display: inline;
     vertical-align: baseline;
   }
+
   a,
   Link {
     cursor: pointer;
   }
+
   dl,
   ol,
   ul {
@@ -59,9 +63,7 @@
 
 .bg-linear-1 {
   background: rgb(1, 219, 241) !important;
-  background: linear-gradient(
-    115deg,
-    rgba(1, 219, 241, 1) 8%,
-    rgba(82, 116, 232, 1) 100%
-  ) !important;
+  background: linear-gradient(115deg,
+      rgba(1, 219, 241, 1) 8%,
+      rgba(82, 116, 232, 1) 100%) !important;
 }
