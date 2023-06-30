@@ -3,6 +3,7 @@ let theme = require("./src/theme/theme.config.js");
 
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}", "./public/index.html"],
+  darkMode: "class",
   important: true,
   theme: {
     extend: {

@@ -78,13 +78,15 @@ export const useProviderFake = () => {
     setUser({});
     setLoggedIn(false);
     setLoading(false);
-    console.log("Login successful");
+    console.log("Logout successful");
     CustomMessage({"content": "Đã đăng xuất"}, "success");
   };
 
   useEffect(() => {
     // getInfo();
   }, []);
+
+
 
   // Return the user object and auth methods
   return {

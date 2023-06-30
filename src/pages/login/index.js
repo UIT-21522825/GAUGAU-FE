@@ -68,7 +68,7 @@ const LoginPage = () => {
         <title>GAUGAU.SignIn | Đăng nhập</title>
       </Helmet>
       <Header />
-      <div className="w-full h-full min-h-screen bg-gray-100 flex align-center justify-center items-center">
+      <div className="w-full h-full min-h-screen dark:bg-[#141625] bg-[#f8f8fb] duration-300 flex align-center justify-center items-center">
         <FormLogin />
       </div>
     </AnonymousWrapper>

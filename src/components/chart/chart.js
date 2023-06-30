@@ -58,48 +58,48 @@ const data = [
 
 const Orders = () => {
     return (
-        <div className='pt-[100px] px-[25px] bg-[#F8F9FC]'>
+        <div className='pt-[100px] pb-[100px] px-[25px] bg-[#F8F9FC]'>
             <div className='flex items-center justify-between'>
-                <h1 className='text-[#5a5c69] text-[28px] leading-[34px] font-normal cursor-pointer'>Dashboard</h1>
-                <button className='bg-[#2E59D9] h-[32px] rounded-[3px] text-white flex items-center justify-center px-[30px] cursor-pointer'>Generate Report</button>
+                <h1 className=' flex cursor-pointer justify-center text-4xl font-bold text-[#2853d2]'>Dự báo</h1>
+                <button className='bg-[#2E59D9] h-[32px] rounded-[3px] text-[20px]  text-white flex items-center justify-center px-[30px] cursor-pointer'>Xuất báo cáo</button>
             </div>
             <div className='grid grid-cols-4 gap-[30px] mt-[25px] pb-[15px]'>
                 <div className='h-[100px] rounded-[8px] bg-slate-200 border-l-[4px] border-[#4E73df] flex items-center justify-between px-[30px] px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out'>
                     <div>
-                        <h2 className='text-[#B589DF] text-[11px] leading-[17px] font-bold'>Today's Number of Order</h2>
-                        <h1 className='text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>10</h1>
+                        <h2 className='text-[#2853d2] text-[20px] leading-[17px] font-bold'>Số hóa đơn hôm nay</h2>
+                        <h1 className='text-[24px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>10</h1>
                     </div>
                     <FaRegCalendarMinus fontSize={28} color="" />
                 </div>
                 <div className='h-[100px] rounded-[8px] bg-slate-200 border-l-[4px] border-[#4E73df] flex items-center justify-between px-[30px] px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out'>
                     <div>
-                        <h2 className='text-[#B589DF] text-[11px] leading-[17px] font-bold'>Month's Number of Order</h2>
-                        <h1 className='text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>200</h1>
+                        <h2 className='text-[#2853d2] text-[20px] leading-[17px] font-bold'>Số hóa đơn tháng</h2>
+                        <h1 className='text-[24px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>200</h1>
                     </div>
                     <FaRegCalendarMinus fontSize={28} color="" />
                 </div>
                 <div className='h-[100px] rounded-[8px] bg-slate-200 border-l-[4px] border-[#4E73df] flex items-center justify-between px-[30px] px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out'>
                     <div>
-                        <h2 className='text-[#B589DF] text-[11px] leading-[17px] font-bold'>Year's Number of Order</h2>
-                        <h1 className='text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>1000</h1>
+                        <h2 className='text-[#2853d2] text-[20px] leading-[17px] font-bold'>Số hóa đơn năm</h2>
+                        <h1 className='text-[24px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>1000</h1>
                     </div>
                     <FaRegCalendarMinus fontSize={28} color="" />
                 </div>
                 <div className='h-[100px] rounded-[8px] bg-slate-200 border-l-[4px] border-[#4E73df] flex items-center justify-between px-[30px] px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out'>
                     <div>
-                        <h2 className='text-[#B589DF] text-[11px] leading-[17px] font-bold'>Total Income</h2>
-                        <h1 className='text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>5.000.000 VND</h1>
+                        <h2 className='text-[#2853d2] text-[20px] leading-[17px] font-bold'>Tổng doanh thu</h2>
+                        <h1 className='text-[24px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>5.000.000 VND</h1>
                     </div>
                     <FaRegCalendarMinus fontSize={28} color="" />
                 </div>
             </div>
 
-            < div className='flex mt-[22px] w-full gap-[30px]' >
+            < div className='flex justify-center mt-[40px] w-full gap-[30px]' >
 
                 <div className='basis-[70%] border bg-white shadow-md cursor-pointer rounded-[4px]'>
                     <div className='bg-[#F8F9FC] flex items-center justify-between py-[15px] px-[20px] border-b-[1px] border-[#EDEDED] MB-[20px]'>
-                        <h2>
-                            Order's Data Chart
+                        <h2 className='text-[24px] font-bold text-[#2853d2]'>
+                            Biểu đồ hóa đơn
                         </h2>
                         <FaEllipsisV color='gray' className='cursor-pointer' />
                     </div>

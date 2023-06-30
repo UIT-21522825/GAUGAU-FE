@@ -10,8 +10,19 @@ import "antd/dist/antd.variable.min.css";
 import { LoginPage } from "./pages/login";
 import { SignUpPage } from "./pages/signup";
 import { HomePage } from "./pages/home";
+
 import themeConfig from "./theme/theme.config";
-import { Provider } from "./components/provider/index";
+import { Provider as MyProvider } from "./components/provider/index";
+import Invoices from "./pages/invoices";
+import Clients from './pages/client'
+import Discounts from './pages/discount'
+import Staffs from './pages/staff'
+import CreateInvoice from './pages/createInvoice'
+
+import store from './redux/store'
+import { Provider } from 'react-redux'
+import { ProductPage } from "./pages/product";
+
 
 ConfigProvider.config({
   theme: {
@@ -40,23 +51,32 @@ ConfigProvider.config({
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Provider>
-    {/* prefixCls="custom" */}
-    <ConfigProvider>
-      <motion.div
-        initial={{ opacity: 0.5, scale: 1 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
+  <Provider store={store}
+  >
+    <MyProvider>
+      {/* prefixCls="custom" */}
+      <ConfigProvider>
+        <motion.div
+          initial={{ opacity: 0.5, scale: 1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <BrowserRouter>
+            <Routes>
+              <Route path="/home" element={<HomePage />} />
 
-            <Route path="login" element={<LoginPage />} />
-            <Route path="signup" element={<SignUpPage />} />
-          </Routes>
-        </BrowserRouter>
-      </motion.div>
-    </ConfigProvider>
+              <Route path="login" element={<LoginPage />} />
+              <Route path="signup" element={<SignUpPage />} />
+              <Route path="create-invoices" element={<CreateInvoice />} />
+              <Route path="invoices" element={<Invoices />} />
+              <Route path="product" element={<ProductPage />} />
+              <Route path="client" element={<Clients />} />
+              <Route path="discount" element={<Discounts />} />
+              <Route path="staff" element={<Staffs />} />
+            </Routes>
+          </BrowserRouter>
+        </motion.div>
+      </ConfigProvider>
+      </MyProvider>
   </Provider>
 );
