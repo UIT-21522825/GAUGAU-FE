@@ -177,7 +177,7 @@ const Header = () => {
                 Hồ sơ
             </li>
           </Link> */}
-            <Link to="/home">
+            <Link to="/">
             <li onClick={() => setNav(!nav)} className="text-xl font-medium py-4 flex dark:text-white text-[#2e59d9] hover:bg-[#2e59d9] hover:text-white hover:rounded-md hover:pl-4">
               <AiFillHome size={25} className="mr-4" />
               Trang chủ
