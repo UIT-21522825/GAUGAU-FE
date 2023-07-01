@@ -18,6 +18,7 @@ import Clients from './pages/client'
 import Discounts from './pages/discount'
 import Staffs from './pages/staff'
 import CreateInvoice from './pages/createInvoice'
+import Error from './pages/error'
 
 import store from './redux/store'
 import { Provider } from 'react-redux'
@@ -73,6 +74,7 @@ root.render(
               <Route path="client" element={<Clients />} />
               <Route path="discount" element={<Discounts />} />
               <Route path="staff" element={<Staffs />} />
+              <Route path="error" element={<Error />} />
             </Routes>
           </BrowserRouter>
         </motion.div>

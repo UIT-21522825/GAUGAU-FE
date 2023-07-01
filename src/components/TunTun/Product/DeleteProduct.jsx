@@ -10,14 +10,14 @@ const DeleteProduct = ({ product, onDelete }) => {
         data: { code: product.code },
       });
       if (response.data.msg === 'success') {
-        message.success('Product deleted successfully.');
+        message.success('Xóa thành công.');
         onDelete(product);
       } else {
-        message.error('Failed to delete product.');
+        message.error('Xóa thất bại.');
       }
     } catch (error) {
-      console.error('Error deleting product:', error);
-      message.error('An error occurred. Please try again.');
+      console.error('Lỗi:', error);
+      message.error('Xảy ra lỗi, vui lòng thử lại.');
     }
   };
 

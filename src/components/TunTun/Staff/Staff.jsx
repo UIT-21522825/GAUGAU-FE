@@ -162,7 +162,7 @@ function Staff() {
     if (!searched) {
         return (
             <>
-                <div className='pr-[10px] pl-[10px]'>
+                <div className='pr-[10px] pl-[10px] pb-[10px]'>
                     <h1 className='text-4xl font-bold flex justify-center pt-[20px] pb-[10px] dark:text-white text-[#2e59d9]'>Quản lý nhân viên</h1>
                     {/* tìm */}
                     <div className="flex justify-between mb-4">
@@ -205,7 +205,7 @@ function Staff() {
                 <div>
                     <div span={12}>
                         <Button type='primary' onClick={() => setShowAddForm(!showAddForm)}>
-                        {showAddForm ? 'Đóng' : 'Thêm sản phẩm'}
+                        {showAddForm ? 'Đóng' : 'Thêm nhân viên'}
                         </Button>
                     </div>
                     <div className='flex justify-center'>

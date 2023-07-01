@@ -1,16 +1,17 @@
 import React from "react";
 import { useAuth } from "../provider/index";
 import { Button, Checkbox, Form, Input } from "antd";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-
 
 const FormLogin = () => {
   const { getInfo } = useAuth();
+  const navigate = useNavigate(); // Add useNavigate hook
 
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
+
   const onFinish = (values) => {
     const { username, password } = values;
 
@@ -30,6 +31,8 @@ const FormLogin = () => {
           // Lưu token và thông tin người dùng vào localStorage
           localStorage.setItem("token", token);
           localStorage.setItem("user", JSON.stringify(user));
+
+          navigate(-1); // Redirect to previous page
         } else {
           console.error("Invalid username or password");
         }

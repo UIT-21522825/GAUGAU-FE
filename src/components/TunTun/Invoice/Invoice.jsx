@@ -96,7 +96,7 @@ const Invoice = () => {
   if (!searched) {
     return (
       <>
-      <div className='pr-[10px] pl-[10px]'>
+      <div className='pr-[10px] pl-[10px] pb-[10px]'>
         <h1 className='text-4xl font-bold flex justify-center pt-[20px] pb-[10px] dark:text-white text-[#2e59d9]'>Quản lý hóa đơn</h1>
         <div className="flex justify-between mb-4">
           <div className='flex  w-[800px]'>

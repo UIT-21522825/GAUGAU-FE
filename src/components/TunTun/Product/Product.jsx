@@ -171,8 +171,8 @@ const [hoveredRow, setHoveredRow] = useState(null);
 
   return (
     <>
-      <div className='pr-[10px] pl-[10px]' >
-        <h1 className='text-xl font-bold flex justify-center pt-[20px] pb-[10px]'>Quản lý sản phẩm</h1>
+      <div className='pr-[10px] pl-[10px] pb-[10px]' >
+        <h1 className='text-4xl font-bold flex justify-center pt-[20px] pb-[10px]  dark:text-white text-[#2e59d9] '>Quản lý sản phẩm</h1>
         <div className="flex justify-between mb-4 ">
           {/* Tìm */}
           <div className="flex w-[800px]">
@@ -206,7 +206,7 @@ const [hoveredRow, setHoveredRow] = useState(null);
           {/* Lọc */}
           <div style={{ marginBottom: '16px' }}>
             <span className='ml-[8px]'>
-              <span  className='text-sm'>
+              <span   className='text-xl dark:text-white'>
                 Lọc danh sách:{' '}
               </span>
               <Select
@@ -228,9 +228,9 @@ const [hoveredRow, setHoveredRow] = useState(null);
         </div>
 
         {/* Thêm */}
-        <div className='flex w-100% mt-[-10px]'>
+        <div>
           <div span={12}>
-            <Button type='primary' onClick={() => setShowAddForm(!showAddForm)}>
+            <Button  type='primary' onClick={() => setShowAddForm(!showAddForm) }>
               {showAddForm ? 'Đóng' : 'Thêm sản phẩm'}
             </Button>
           </div>
@@ -251,9 +251,9 @@ const [hoveredRow, setHoveredRow] = useState(null);
             )}
           </div>
         </div>
-        <h2 className="flex pt-[10px] pb-[5px]">
+        <h2 className="flex pt-[10px] pb-[5px] text-xl dark:text-white">
           Hiện có tổng cộng&nbsp;
-          <span className="text-bold text-sm text-blue-500">{data.length}</span>&nbsp;
+          <span  className="text-bold text-sm text-blue-500 text-xl">{data.length}</span>&nbsp;
           loại hàng hóa
         </h2>
         <Table columns={columns} dataSource={searchResults.length > 0 ? searchResults : data} loading={loading}

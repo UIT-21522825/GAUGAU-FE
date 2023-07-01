@@ -79,7 +79,7 @@ function AddDiscount() {
   return (
     <div className='border p-[10px] flex ml-[100px]'>
       <div className='w-[700px] border-spacing-1 border-zinc-950 ml-[10px]'>
-        <h1 className='flex justify-center text-lg'>Thêm khuyến mãi</h1>
+        <h1 className='flex justify-center text-lg dark:text-white text-[#2e59d9] text-[20x] font-bold'>Thêm khuyến mãi</h1>
         <div flex gap-2>
           <input
             className='w-[340px] border border-gray-300 rounded-md px-3 py-2'

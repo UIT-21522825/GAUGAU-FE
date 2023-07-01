@@ -31,7 +31,7 @@ function Discount() {
       }
       setLoading(false);
     } catch (error) {
-      console.error('Error fetching customers:', error);
+      console.error('Lỗi:', error);
       setLoading(false);
     }
   };
@@ -135,6 +135,7 @@ function Discount() {
       setSortOption(null);
       loadDiscountsData();
       setSearched(false);
+      
     };
     // xóa
     const handleConfirmDelete = async (discount) => {
@@ -164,7 +165,7 @@ function Discount() {
     if (!searched) {
       return (
         <>
-          <div className='pr-[10px] pl-[10px]'>
+          <div className='pr-[10px] pl-[10px] pb-[10px]'>
             <h1 className='text-4xl font-bold flex justify-center pt-[20px] pb-[10px] dark:text-white text-[#2e59d9]'>Quản lý mã giảm giá</h1>
             {/* tìm */}
             <div className="flex justify-between mb-4">
@@ -202,7 +203,7 @@ function Discount() {
             </div>
                     
             {/* Thêm */}
-            <div>
+            <div >
               <div span={12}>
                 <Button type='primary' onClick={() => setShowAddForm(!showAddForm)}>
                   {showAddForm ? 'Đóng' : 'Thêm Discount'}
